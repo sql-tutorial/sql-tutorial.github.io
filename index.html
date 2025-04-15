@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<link media="all" href="https://sql-tutorial.github.io/wp-content/cache/autoptimize/css/autoptimize_671c89b062ef28d4fd802b778eb07d72.css" rel="stylesheet"><title>&#1057;&#1082;&#1072;&#1095;&#1072;&#1090;&#1100; SQL Server Management Studio (SSMS) Versions &#1073;&#1077;&#1089;&#1087;&#1083;&#1072;&#1090;&#1085;&#1086;</title>
+	<meta name="description" content="&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1080;&#1090;&#1077; &#1087;&#1086;&#1089;&#1083;&#1077;&#1076;&#1085;&#1102;&#1102; &#1074;&#1077;&#1088;&#1089;&#1080;&#1102; SQL Server Management Studio (SSMS) &#1076;&#1083;&#1103; &#1091;&#1087;&#1088;&#1072;&#1074;&#1083;&#1077;&#1085;&#1080;&#1103; &#1080; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080; SQL Server &#1080; Azure SQL.">
+	<link rel="canonical" href="https://sql-tutorial.github.io/">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="&#1057;&#1082;&#1072;&#1095;&#1072;&#1090;&#1100; SQL Server Management Studio (SSMS) Versions &#1073;&#1077;&#1089;&#1087;&#1083;&#1072;&#1090;&#1085;&#1086;">
+	<meta property="og:description" content="&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1080;&#1090;&#1077; &#1087;&#1086;&#1089;&#1083;&#1077;&#1076;&#1085;&#1102;&#1102; &#1074;&#1077;&#1088;&#1089;&#1080;&#1102; SQL Server Management Studio (SSMS) &#1076;&#1083;&#1103; &#1091;&#1087;&#1088;&#1072;&#1074;&#1083;&#1077;&#1085;&#1080;&#1103; &#1080; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080; SQL Server &#1080; Azure SQL.">
+	<meta property="og:url" content="https://sql-tutorial.github.io/">
+	<meta property="og:site_name" content="SQL">
+	<meta property="article:modified_time" content="2025-04-15T07:57:47+00:00">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://sql-tutorial.github.io/","url":"https://sql-tutorial.github.io/","name":"&#1057;&#1082;&#1072;&#1095;&#1072;&#1090;&#1100; SQL Server Management Studio (SSMS) Versions &#1073;&#1077;&#1089;&#1087;&#1083;&#1072;&#1090;&#1085;&#1086;","isPartOf":{"@id":"https://sql-tutorial.github.io/#website"},"about":{"@id":"https://sql-tutorial.github.io/#/schema/person/c9074ea806fc0b6754ce74150b063bf5"},"datePublished":"2025-04-14T09:17:05+00:00","dateModified":"2025-04-15T07:57:47+00:00","description":"&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1080;&#1090;&#1077; &#1087;&#1086;&#1089;&#1083;&#1077;&#1076;&#1085;&#1102;&#1102; &#1074;&#1077;&#1088;&#1089;&#1080;&#1102; SQL Server Management Studio (SSMS) &#1076;&#1083;&#1103; &#1091;&#1087;&#1088;&#1072;&#1074;&#1083;&#1077;&#1085;&#1080;&#1103; &#1080; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1080; SQL Server &#1080; Azure SQL.","breadcrumb":{"@id":"https://sql-tutorial.github.io/#breadcrumb"},"inLanguage":"ru-RU","potentialAction":[{"@type":"ReadAction","target":["https://sql-tutorial.github.io/"]}]},{"@type":"BreadcrumbList","@id":"https://sql-tutorial.github.io/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103; &#1089;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1072;"}]},{"@type":"WebSite","@id":"https://sql-tutorial.github.io/#website","url":"https://sql-tutorial.github.io/","name":"SQL","description":"&#1048;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1080;&#1080; &#1087;&#1086; SQL","publisher":{"@id":"https://sql-tutorial.github.io/#/schema/person/c9074ea806fc0b6754ce74150b063bf5"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://sql-tutorial.github.io/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"ru-RU"},{"@type":["Person","Organization"],"@id":"https://sql-tutorial.github.io/#/schema/person/c9074ea806fc0b6754ce74150b063bf5","name":"&#1052;&#1080;&#1088;&#1086;&#1089;&#1083;&#1072;&#1074; &#1057;.","logo":{"@id":"https://sql-tutorial.github.io/#/schema/person/image/"},"description":"&#1040;&#1074;&#1090;&#1086;&#1088; &#1089;&#1090;&#1072;&#1090;&#1077;&#1081;, &#1048;&#1041;-&#1089;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1080;&#1089;&#1090;"}]}</script>
+<link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C400i%2C700&amp;subset=cyrillic&amp;display=swap" media="all">
+<script defer type="text/javascript" src="https://sql-tutorial.github.io/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<link rel="preload" href="https://sql-tutorial.github.io/wp-content/themes/yelly/assets/fonts/icomoon.ttf" as="font" crossorigin>
+<link rel="icon" href="https://sql-tutorial.github.io/wp-content/uploads/2023/12/cropped-favi-32x32.png" sizes="32x32">
+<link rel="icon" href="https://sql-tutorial.github.io/wp-content/uploads/2023/12/cropped-favi-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://sql-tutorial.github.io/wp-content/uploads/2023/12/cropped-favi-180x180.png">
+<meta name="msapplication-TileImage" content="https://sql-tutorial.github.io/wp-content/uploads/2023/12/cropped-favi-270x270.png">
+    	<meta name="yandex-verification" content="18eb552a97e0a9ac">
+</head>
+<body class="home page-template-default page page-id-2 wp-embed-responsive sidebar-none">
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content">&#1055;&#1077;&#1088;&#1077;&#1081;&#1090;&#1080; &#1082; &#1082;&#1086;&#1085;&#1090;&#1077;&#1085;&#1090;&#1091;</a>
+    <div class="search-screen-overlay js-search-screen-overlay"></div>
+    <div class="search-screen js-search-screen">
+<form role="search" method="get" class="search-form" action="https://sql-tutorial.github.io/">
+    <label>
+        <span class="screen-reader-text">Search for:</span>
+        <input type="search" class="search-field" placeholder="&#1055;&#1086;&#1080;&#1089;&#1082;..." value="" name="s">
+    </label>
+    <button type="submit" class="search-submit"></button>
+</form>    </div>
+<header id="masthead" class="site-header full" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="site-header-inner fixed">
+        <div class="humburger js-humburger"><span></span><span></span><span></span></div>
+<div class="site-branding">
+    <div class="site-branding__body"><div class="site-title">SQL</div></div></div><!-- .site-branding -->
+    <nav id="site-navigation" class="main-navigation full">
+        <div class="main-navigation-inner fixed">
+            <div class="menu-menyu-container"><ul id="header_menu" class="menu"><li id="menu-item-1416" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1416"><a href="https://sql-tutorial.github.io/category/nachalo">&#1053;&#1072;&#1095;&#1072;&#1083;&#1086;</a></li>
+<li id="menu-item-1413" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1413"><a href="https://sql-tutorial.github.io/category/api">API</a></li>
+<li id="menu-item-1414" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1414"><a href="https://sql-tutorial.github.io/category/administrirovanie-sql-servera">&#1040;&#1076;&#1084;&#1080;&#1085;&#1080;&#1089;&#1090;&#1088;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;</a></li>
+<li id="menu-item-1417" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1417"><a href="https://sql-tutorial.github.io/category/osnovy-sql">&#1054;&#1089;&#1085;&#1086;&#1074;&#1099; SQL</a></li>
+<li id="menu-item-1418" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1418"><a href="https://sql-tutorial.github.io/category/funktsii">&#1060;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;</a></li>
+</ul></div>        </div>
+    </nav><!-- #site-navigation -->
+    </div>
+</header><!-- #masthead -->
+    <div id="content" class="site-content fixed">
+        <div class="site-content-inner">
+    <div id="primary" class="content-area" itemscope itemtype="http://schema.org/Article">
+        <main id="main" class="site-main">
+<article id="post-2" class="article-post post-2 page type-page status-publish ">
+        <header class="entry-header"><h1 class="entry-title" itemprop="headline">SQL Server Management Studio (SSMS) Versions</h1></header>
+	<div class="entry-content" itemprop="articleBody">
+		<p><strong>Microsoft SQL Server Management Studio (SSMS)</strong> &mdash; &#1101;&#1090;&#1086; &#1087;&#1086;&#1083;&#1085;&#1086;&#1094;&#1077;&#1085;&#1085;&#1072;&#1103; &#1080; &#1091;&#1076;&#1086;&#1073;&#1085;&#1072;&#1103; &#1089;&#1088;&#1077;&#1076;&#1072; &#1076;&#1083;&#1103; &#1088;&#1072;&#1073;&#1086;&#1090;&#1099; &#1089; &#1080;&#1085;&#1092;&#1088;&#1072;&#1089;&#1090;&#1088;&#1091;&#1082;&#1090;&#1091;&#1088;&#1086;&#1081; SQL Server. &#1057;&#1082;&#1072;&#1095;&#1072;&#1090;&#1100; SQL Server Management Studio &#1084;&#1086;&#1078;&#1085;&#1086; &#1089; &#1086;&#1092;&#1080;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1086;&#1075;&#1086; &#1089;&#1072;&#1081;&#1090;&#1072;, &#1074;&#1089;&#1077; &#1089;&#1089;&#1099;&#1083;&#1082;&#1080; &#1087;&#1088;&#1077;&#1076;&#1089;&#1090;&#1072;&#1074;&#1083;&#1077;&#1085;&#1099; &#1085;&#1080;&#1078;&#1077;. &#1057; &#1077;&#1105; &#1087;&#1086;&#1084;&#1086;&#1097;&#1100;&#1102; &#1074;&#1099; &#1084;&#1086;&#1078;&#1077;&#1090;&#1077; &#1091;&#1087;&#1088;&#1072;&#1074;&#1083;&#1103;&#1090;&#1100; &#1073;&#1072;&#1079;&#1072;&#1084;&#1080; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;, &#1085;&#1072;&#1089;&#1090;&#1088;&#1072;&#1080;&#1074;&#1072;&#1090;&#1100; &#1089;&#1077;&#1088;&#1074;&#1077;&#1088;, &#1086;&#1090;&#1089;&#1083;&#1077;&#1078;&#1080;&#1074;&#1072;&#1090;&#1100; &#1077;&#1075;&#1086; &#1089;&#1086;&#1089;&#1090;&#1086;&#1103;&#1085;&#1080;&#1077; &#1080; &#1087;&#1088;&#1086;&#1080;&#1079;&#1074;&#1086;&#1076;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1100;, &#1072; &#1090;&#1072;&#1082;&#1078;&#1077; &#1074;&#1099;&#1087;&#1086;&#1083;&#1085;&#1103;&#1090;&#1100; &#1072;&#1076;&#1084;&#1080;&#1085;&#1080;&#1089;&#1090;&#1088;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; &mdash; &#1074;&#1089;&#1105; &#1101;&#1090;&#1086; &#1095;&#1077;&#1088;&#1077;&#1079; &#1087;&#1086;&#1085;&#1103;&#1090;&#1085;&#1099;&#1081; &#1075;&#1088;&#1072;&#1092;&#1080;&#1095;&#1077;&#1089;&#1082;&#1080;&#1081; &#1080;&#1085;&#1090;&#1077;&#1088;&#1092;&#1077;&#1081;&#1089;.</p>
+<p>SSMS &#1087;&#1086;&#1079;&#1074;&#1086;&#1083;&#1103;&#1077;&#1090;:</p>
+<ul>
+<li>&#1055;&#1086;&#1076;&#1082;&#1083;&#1102;&#1095;&#1072;&#1090;&#1100;&#1089;&#1103; &#1082; &#1083;&#1102;&#1073;&#1099;&#1084; &#1074;&#1077;&#1088;&#1089;&#1080;&#1103;&#1084; SQL Server &#1080; &#1091;&#1087;&#1088;&#1072;&#1074;&#1083;&#1103;&#1090;&#1100; &#1080;&#1084;&#1080;;</li>
+<li>&#1056;&#1072;&#1079;&#1074;&#1086;&#1088;&#1072;&#1095;&#1080;&#1074;&#1072;&#1090;&#1100;, &#1086;&#1073;&#1085;&#1086;&#1074;&#1083;&#1103;&#1090;&#1100; &#1080; &#1082;&#1086;&#1085;&#1090;&#1088;&#1086;&#1083;&#1080;&#1088;&#1086;&#1074;&#1072;&#1090;&#1100; &#1082;&#1086;&#1084;&#1087;&#1086;&#1085;&#1077;&#1085;&#1090;&#1099; &#1091;&#1088;&#1086;&#1074;&#1085;&#1103; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;, &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1077;&#1084;&#1099;&#1077; &#1074; &#1074;&#1072;&#1096;&#1080;&#1093; &#1087;&#1088;&#1080;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1103;&#1093; (&#1085;&#1072;&#1087;&#1088;&#1080;&#1084;&#1077;&#1088;, &#1073;&#1072;&#1079;&#1099; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;);</li>
+<li>&#1056;&#1072;&#1073;&#1086;&#1090;&#1072;&#1090;&#1100; &#1089;&#1086; &#1089;&#1082;&#1088;&#1080;&#1087;&#1090;&#1072;&#1084;&#1080; &#1085;&#1072; &#1103;&#1079;&#1099;&#1082;&#1072;&#1093; <strong>Transact-SQL (T-SQL)</strong>, <strong>MDX</strong>, <strong>DMX</strong> &#1080; <strong>XML</strong> &mdash; &#1089; &#1087;&#1086;&#1076;&#1076;&#1077;&#1088;&#1078;&#1082;&#1086;&#1081; &#1087;&#1086;&#1076;&#1089;&#1074;&#1077;&#1090;&#1082;&#1080; &#1089;&#1080;&#1085;&#1090;&#1072;&#1082;&#1089;&#1080;&#1089;&#1072;, &#1072;&#1074;&#1090;&#1086;&#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1077;&#1085;&#1080;&#1103; &#1080; &#1086;&#1090;&#1083;&#1072;&#1076;&#1082;&#1080; &#1082;&#1086;&#1076;&#1072;.</li>
+</ul>
+<p>&#1042;&#1072;&#1078;&#1085;&#1086;: <strong>Management Studio &mdash; &#1101;&#1090;&#1086; &#1087;&#1086;&#1083;&#1085;&#1086;&#1089;&#1090;&#1100;&#1102; &#1072;&#1074;&#1090;&#1086;&#1085;&#1086;&#1084;&#1085;&#1086;&#1077; &#1087;&#1088;&#1080;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1077;</strong>, &#1082;&#1086;&#1090;&#1086;&#1088;&#1086;&#1077; <strong>&#1085;&#1077; &#1087;&#1088;&#1080;&#1074;&#1103;&#1079;&#1072;&#1085;&#1086; &#1082; &#1082;&#1086;&#1085;&#1082;&#1088;&#1077;&#1090;&#1085;&#1086;&#1081; &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; SQL Server</strong> &#1080; <strong>&#1085;&#1077; &#1090;&#1088;&#1077;&#1073;&#1091;&#1077;&#1090; &#1086;&#1090;&#1076;&#1077;&#1083;&#1100;&#1085;&#1086;&#1081; &#1083;&#1080;&#1094;&#1077;&#1085;&#1079;&#1080;&#1080;</strong>. &#1058;&#1086; &#1077;&#1089;&#1090;&#1100; &#1074;&#1099; &#1084;&#1086;&#1078;&#1077;&#1090;&#1077; &#1089;&#1082;&#1072;&#1095;&#1080;&#1074;&#1072;&#1090;&#1100; &#1080; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1100; &#1077;&#1075;&#1086; &#1073;&#1077;&#1089;&#1087;&#1083;&#1072;&#1090;&#1085;&#1086;.</p>
+<h2>&#128317; &#1050;&#1072;&#1082; &#1089;&#1082;&#1072;&#1095;&#1072;&#1090;&#1100; SQL Server Management Studio (SSMS)</h2>
+<table class="tbl" style="border-collapse: collapse;">
+<thead>
+<tr>
+<th>Version</th>
+<th class="h">Alternative names</th>
+<th>Build number</th>
+<th>Release year</th>
+<th>Download latest</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SQL Server Management Studio 21</td>
+<td class="h">SSMS 21<br>
+SSMS21<br>
+SSMS 2021<br>
+SSMS2021<br>
+SSMS 21.x</td>
+<td>21.0.x.x</td>
+<td style="text-align: right;">Not released</td>
+<td></td>
+</tr>
+<tr>
+<td>SQL Server Management Studio 20</td>
+<td class="h">SSMS 20<br>
+SSMS20<br>
+SSMS 2020<br>
+SSMS2020<br>
+SSMS 20.x</td>
+<td>20.0.x.x</td>
+<td style="text-align: right;">2024</td>
+<td><a style="white-space: nowrap; margin-top: 10px; background-color: #4caf50; color: #fff; padding: 2px 4px; text-decoration: none;" title="Download the latest SSMS 20" href="https://download.microsoft.com/download/9/b/e/9bee9f00-2ee2-429a-9462-c9bc1ce14c28/SSMS-Setup-ENU.exe" rel="nofollow">Direct download 20.2</a></td>
+</tr>
+<tr>
+<td>SQL Server Management Studio 19</td>
+<td class="h">SSMS 19<br>
+SSMS19<br>
+SSMS 2019<br>
+SSMS2019<br>
+SSMS 19.x</td>
+<td>19.0.x.x</td>
+<td style="text-align: right;">2023</td>
+<td><a style="white-space: nowrap; margin-top: 10px; background-color: #4caf50; color: #fff; padding: 2px 4px; text-decoration: none;" title="Download the latest SSMS 19" href="https://download.microsoft.com/download/7/7/3/7738e337-ed99-40ea-b8ae-f639162c83c3/SSMS-Setup-ENU.exe" rel="nofollow">Direct download 19.3</a></td>
+</tr>
+<tr>
+<td>SQL Server Management Studio 18</td>
+<td class="h">SSMS 18<br>
+SSMS18<br>
+SSMS 2018<br>
+SSMS2018<br>
+SSMS 18.x</td>
+<td>15.0.x.x</td>
+<td style="text-align: right;">2019</td>
+<td><a style="white-space: nowrap; margin-top: 10px; background-color: #4caf50; color: #fff; padding: 2px 4px; text-decoration: none;" title="Download the latest SSMS 18" href="https://download.microsoft.com/download/8/a/8/8a8073d2-2e00-472b-9a18-88361d105915/SSMS-Setup-ENU.exe" rel="nofollow">Direct download 18.12.1</a></td>
+</tr>
+<tr>
+<td>SQL Server Management Studio 17</td>
+<td class="h">SSMS 17<br>
+SSMS17<br>
+SSMS 2017<br>
+SSMS2017<br>
+SSMS 17.x</td>
+<td>14.0.x.x</td>
+<td style="text-align: right;">2017</td>
+<td><a style="white-space: nowrap; margin-top: 10px; background-color: #4caf50; color: #fff; padding: 2px 4px; text-decoration: none;" title="Download the latest SSMS 17" href="https://download.microsoft.com/download/D/D/4/DD495084-ADA7-4827-ADD3-FC566EC05B90/SSMS-Setup-ENU.exe" rel="nofollow">Direct download 17.9.1</a></td>
+</tr>
+<tr>
+<td>SQL Server Management Studio 16</td>
+<td class="h">SSMS 16<br>
+SSMS16<br>
+SSMS 2016<br>
+SSMS2016<br>
+SSMS 16.x</td>
+<td>13.0.x.x</td>
+<td style="text-align: right;">2016</td>
+<td><a style="white-space: nowrap; margin-top: 10px; background-color: #4caf50; color: #fff; padding: 2px 4px; text-decoration: none;" title="Download the latest SSMS 16" href="https://download.microsoft.com/download/9/3/3/933EA6DD-58C5-4B78-8BEC-2DF389C72BE0/SSMS-Setup-ENU.exe" rel="nofollow">Direct download 16.5.3</a></td>
+</tr>
+<tr>
+<td style="color: #444;" colspan="4">Not standalone (integral part of SQL Server):</td>
+</tr>
+<tr>
+<td>SQL Server Management Studio 2014</td>
+<td class="h">SSMS 2014<br>
+SSMS2014<br>
+SSMS 12<br>
+SSMS12<br>
+SSMS 12.x</td>
+<td>12.0.x.x</td>
+<td style="text-align: right;">2014</td>
+<td><a style="white-space: nowrap; margin-top: 10px; background-color: #4caf50; color: #fff; padding: 2px 4px; text-decoration: none;" title="Download the latest SSMS 2014 SP3 (12.0.6024.0)" href="https://www.microsoft.com/en-us/download/details.aspx?id=57473" target="_blank" rel="nofollow noopener">Download 2014</a></td>
+</tr>
+<tr>
+<td>SQL Server Management Studio 2012</td>
+<td class="h">SSMS 2012<br>
+SSMS2012<br>
+SSMS 11<br>
+SSMS11<br>
+SSMS 11.x</td>
+<td>11.0.x.x</td>
+<td style="text-align: right;">2012</td>
+<td><a style="white-space: nowrap; margin-top: 10px; background-color: #4caf50; color: #fff; padding: 2px 4px; text-decoration: none;" title="Download the latest SSMS 2012 SP4 (11.0.7001.0)" href="https://www.microsoft.com/en-us/download/details.aspx?id=56042" target="_blank" rel="nofollow noopener">Download 2012</a></td>
+</tr>
+<tr>
+<td>SQL Server Management Studio 2008 R2</td>
+<td class="h">SSMS 2008 R2<br>
+SSMS2008R2<br>
+SSMS 10.5<br>
+SSMS10.50</td>
+<td>10.50.x.x</td>
+<td style="text-align: right;">2010</td>
+<td><a style="white-space: nowrap; margin-top: 10px; background-color: #4caf50; color: #fff; padding: 2px 4px; text-decoration: none;" title="Download the latest SSMS 2008 R2 SP2 (10.50.4000.0)" href="https://www.microsoft.com/en-us/download/details.aspx?id=30438" target="_blank" rel="nofollow noopener">Download 2008 R2</a></td>
+</tr>
+<tr>
+<td>SQL Server Management Studio 2008</td>
+<td class="h">SSMS 2008<br>
+SSMS2008<br>
+SSMS 10<br>
+SSMS10<br>
+SSMS 10.x</td>
+<td>10.0.x.x</td>
+<td style="text-align: right;">2008</td>
+<td><a style="white-space: nowrap; margin-top: 10px; background-color: #4caf50; color: #fff; padding: 2px 4px; text-decoration: none;" title="Download the latest SSMS 2008 (10.00.1600.22)" href="https://www.microsoft.com/en-us/download/details.aspx?id=7593" target="_blank" rel="nofollow noopener">Download 2008</a></td>
+</tr>
+<tr>
+<td>SQL Server Management Studio 2005</td>
+<td class="h">SSMS 2005<br>
+SSMS2005<br>
+SSMS 9<br>
+SSMS9<br>
+SSMS 9.x</td>
+<td>9.0.x.x</td>
+<td style="text-align: right;">2005</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>SSMS&nbsp;18 can be installed side-by-side with SSMS&nbsp;17 / 16 or SQL Server 2014 SSMS and earlier.</p>
+<h2>Build numbers:</h2>
+<table class="tbl" style="border-collapse: collapse;">
+<tbody>
+<tr>
+<th>Version</th>
+<th>Build</th>
+<th>Description</th>
+<th>Release date</th>
+</tr>
+<tr>
+<td>21.0</td>
+<td>21.0.107.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/ssms-21/release-notes-21" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 21.0 (Preview 5)</a>&nbsp; <span class="beta">Beta</span></td>
+<td><time title="March 11, 2025" datetime="2025-03-11">2025-03-11</time><span style="font-size: x-small; color: red;"> *new</span></td>
+</tr>
+<tr>
+<td>21.0</td>
+<td>21.0.85.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/ssms-21/release-notes-21#210-preview-41" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 21.0 (Preview 4.1)</a>&nbsp; <span class="beta">Beta</span></td>
+<td><time title="February 24, 2025" datetime="2025-02-24">2025-02-24</time><span style="font-size: x-small; color: red;"> *new</span></td>
+</tr>
+<tr>
+<td>21.0</td>
+<td>21.0.85.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/ssms-21/release-notes-21#210-preview-4" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 21.0 (Preview 4)</a>&nbsp; <span class="beta">Beta</span></td>
+<td><time title="February 11, 2025" datetime="2025-02-11">2025-02-11</time><span style="font-size: x-small; color: red;"> *new</span></td>
+</tr>
+<tr>
+<td>21.0</td>
+<td>21.0.83.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/ssms-21/release-notes-21#210-preview-3" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 21.0 (Preview 3)</a>&nbsp; <span class="beta">Beta</span></td>
+<td><time title="January 22, 2025" datetime="2025-01-22">2025-01-22</time></td>
+</tr>
+<tr>
+<td>21.0</td>
+<td>21.0.73.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/ssms-21/release-notes-21#210-preview-21" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 21.0 (Preview 2.1)</a>&nbsp; <span class="beta">Beta</span></td>
+<td><time title="December 18, 2024" datetime="2024-12-18">2024-12-18</time></td>
+</tr>
+<tr>
+<td>21.0</td>
+<td>21.0.73.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/ssms-21/release-notes-21#210-preview-2" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 21.0 (Preview 2)</a>&nbsp; <span class="beta">Beta</span></td>
+<td><time title="December 10, 2024" datetime="2024-12-10">2024-12-10</time></td>
+</tr>
+<tr>
+<td>21.0</td>
+<td>21.0.47.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/ssms-21/release-notes-21#210-preview-1" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 21.0 (Preview 1)</a>&nbsp; <span class="beta">Beta</span></td>
+<td><time title="November 12, 2024" datetime="2024-11-12">2024-11-12</time></td>
+</tr>
+<tr>
+<td>20.2</td>
+<td>20.2.30.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 20.2</a>&nbsp; <span class="lsp">Latest</span>&nbsp; <a style="white-space: nowrap; margin-top: 10px; background-color: #4caf50; color: #fff; padding: 2px 4px; text-decoration: none;" title="Download the latest SSMS" href="https://download.microsoft.com/download/9/b/e/9bee9f00-2ee2-429a-9462-c9bc1ce14c28/SSMS-Setup-ENU.exe" rel="nofollow">Direct download </a></td>
+<td><time title="July 9, 2024" datetime="2024-07-09">2024-07-09</time></td>
+</tr>
+<tr>
+<td>20.1</td>
+<td>20.1.10.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms#201" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 20.1</a></td>
+<td><time title="April 9, 2024" datetime="2024-04-09">2024-04-09</time></td>
+</tr>
+<tr>
+<td>20.0</td>
+<td>20.0.70.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms#200" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 20.0</a></td>
+<td><time title="March 19, 2024" datetime="2024-03-19">2024-03-19</time></td>
+</tr>
+<tr>
+<td>20.0</td>
+<td>20.0.65.0</td>
+<td>SQL Server Management Studio (SSMS) 20.0 (Preview 1)&nbsp; <span class="beta">Beta</span></td>
+<td><time title="February 29, 2024" datetime="2024-02-29">2024-02-29</time></td>
+</tr>
+<tr>
+<td>19.3</td>
+<td>19.3.4.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms#193" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 19.3</a></td>
+<td><time title="January 10, 2024" datetime="2024-01-10">2024-01-10</time></td>
+</tr>
+<tr>
+<td>19.2</td>
+<td>19.2.56.2</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms#192" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 19.2</a></td>
+<td><time title="November 13, 2023" datetime="2023-11-13">2023-11-13</time></td>
+</tr>
+<tr>
+<td>19.1</td>
+<td>19.1.56.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms#191" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 19.1</a></td>
+<td><time title="May 24, 2023" datetime="2023-05-24">2023-05-24</time></td>
+</tr>
+<tr>
+<td>19.0.2</td>
+<td>19.0.20209.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms#1902" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 19.0.2</a></td>
+<td><time title="March 13, 2023" datetime="2023-03-13">2023-03-13</time></td>
+</tr>
+<tr>
+<td>19.0.1</td>
+<td>19.0.20200.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms#1901" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 19.0.1</a></td>
+<td><time title="February 2, 2023" datetime="2023-02-02">2023-02-02</time></td>
+</tr>
+<tr>
+<td>19.0</td>
+<td>19.0.20196.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms#190" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 19.0</a></td>
+<td><time title="January 26, 2023" datetime="2023-01-26">2023-01-26</time></td>
+</tr>
+<tr>
+<td>19.0</td>
+<td>19.0.20179.0</td>
+<td>SQL Server Management Studio (SSMS) 19.0 (Preview 4)&nbsp; <span class="beta">Beta</span></td>
+<td><time title="December 15, 2022" datetime="2022-12-15">2022-12-15</time></td>
+</tr>
+<tr>
+<td>19.0</td>
+<td>16.0.19061.0</td>
+<td>SQL Server Management Studio (SSMS) 19.0 (Preview 3)&nbsp; <span class="beta">Beta</span></td>
+<td><time title="August 11, 2022" datetime="2022-08-11">2022-08-11</time></td>
+</tr>
+<tr>
+<td>19.0</td>
+<td>16.0.19056.0</td>
+<td>SQL Server Management Studio (SSMS) 19.0 (Preview 2)&nbsp; <span class="beta">Beta</span></td>
+<td><time title="May 24, 2022" datetime="2022-05-24">2022-05-24</time></td>
+</tr>
+<tr>
+<td>18.12.1</td>
+<td>15.0.18424.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms#18121" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.12.1</a></td>
+<td><time title="June 21, 2022" datetime="2022-06-21">2022-06-21</time></td>
+</tr>
+<tr>
+<td>18.12</td>
+<td>15.0.18420.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#1812" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.12</a></td>
+<td><time title="June 9, 2022" datetime="2022-06-09">2022-06-09</time></td>
+</tr>
+<tr>
+<td>18.11.1</td>
+<td>15.0.18410.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#18111" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.11.1</a></td>
+<td><time title="March 8, 2022" datetime="2022-03-08">2022-03-08</time></td>
+</tr>
+<tr>
+<td>18.11</td>
+<td>15.0.18404.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#1811" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.11</a></td>
+<td><time title="February 24, 2022" datetime="2022-02-24">2022-02-24</time></td>
+</tr>
+<tr>
+<td>18.10</td>
+<td>15.0.18390.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#1810" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.10</a></td>
+<td><time title="October 5, 2021" datetime="2021-10-05">2021-10-05</time></td>
+</tr>
+<tr>
+<td>18.9.2</td>
+<td>15.0.18386.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#1892" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.9.2</a></td>
+<td><time title="July 15, 2021" datetime="2021-07-15">2021-07-15</time></td>
+</tr>
+<tr>
+<td>18.9.1</td>
+<td>15.0.18384.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#1891" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.9.1</a></td>
+<td><time title="April 20, 2021" datetime="2021-04-20">2021-04-20</time></td>
+</tr>
+<tr>
+<td>18.9</td>
+<td>15.0.18382.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#189" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.9</a></td>
+<td><time title="April 15, 2021" datetime="2021-04-15">2021-04-15</time></td>
+</tr>
+<tr>
+<td>18.8</td>
+<td>15.0.18369.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#188" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.8</a></td>
+<td><time title="December 17, 2020" datetime="2020-12-17">2020-12-17</time></td>
+</tr>
+<tr>
+<td>18.7.1</td>
+<td>15.0.18358.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#1871" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.7.1</a></td>
+<td><time title="October 27, 2020" datetime="2020-10-27">2020-10-27</time></td>
+</tr>
+<tr>
+<td>18.7</td>
+<td>15.0.18357.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#187" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.7</a></td>
+<td><time title="October 20, 2020" datetime="2020-10-20">2020-10-20</time></td>
+</tr>
+<tr>
+<td>18.6</td>
+<td>15.0.18338.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#186" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.6</a></td>
+<td><time title="July 22, 2020" datetime="2020-07-22">2020-07-22</time></td>
+</tr>
+<tr>
+<td>18.5.1</td>
+<td>15.0.18333.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#1851" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.5.1</a></td>
+<td><time title="June 9, 2020" datetime="2020-06-09">2020-06-09</time></td>
+</tr>
+<tr>
+<td>18.5</td>
+<td>15.0.18330.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#185" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.5</a></td>
+<td><time title="April 7, 2020" datetime="2020-04-07">2020-04-07</time></td>
+</tr>
+<tr>
+<td>18.4</td>
+<td>15.0.18206.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#184" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.4</a></td>
+<td><time title="November 4, 2019" datetime="2019-11-04">2019-11-04</time></td>
+</tr>
+<tr>
+<td>18.3.1</td>
+<td>15.0.18183.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms#1831" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.3.1</a></td>
+<td><time title="October 2, 2019" datetime="2019-10-02">2019-10-02</time></td>
+</tr>
+<tr>
+<td>18.3</td>
+<td>15.0.18178.0</td>
+<td>SQL Server Management Studio (SSMS) 18.3&nbsp; <span class="cve">Withdrawn</span></td>
+<td><time title="September 23, 2019" datetime="2019-09-23">2019-09-23</time></td>
+</tr>
+<tr>
+<td>18.2</td>
+<td>15.0.18142.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms?view=sql-server-2017#download-ssms-182" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.2</a></td>
+<td><time title="July 25, 2019" datetime="2019-07-25">2019-07-25</time></td>
+</tr>
+<tr>
+<td>18.1</td>
+<td>15.0.18131.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms?view=sql-server-2017#download-ssms-181" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.1</a></td>
+<td><time title="June 11, 2019" datetime="2019-06-11">2019-06-11</time></td>
+</tr>
+<tr>
+<td>18.0</td>
+<td>15.0.18118.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/release-notes-ssms?view=sql-server-2017#download-ssms-180" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 18.0</a></td>
+<td><time title="April 24, 2019" datetime="2019-04-24">2019-04-24</time></td>
+</tr>
+<tr>
+<td>18.0</td>
+<td>15.0.18116.0</td>
+<td>SQL Server Management Studio (SSMS) 18.0 Private&nbsp; <span class="beta">Beta</span></td>
+<td><time title="April 18, 2019" datetime="2019-04-18">2019-04-18</time></td>
+</tr>
+<tr>
+<td>18.0</td>
+<td>15.0.18098.0</td>
+<td>SQL Server Management Studio (SSMS) 18.0 Release Candidate 1 (RC1)&nbsp; <span class="beta">Beta</span></td>
+<td><time title="March 28, 2019" datetime="2019-03-28">2019-03-28</time></td>
+</tr>
+<tr>
+<td>18.0</td>
+<td>15.0.18092.0</td>
+<td>SQL Server Management Studio (SSMS) 18.0 (Preview 7)&nbsp; <span class="beta">Beta</span></td>
+<td><time title="March 1, 2019" datetime="2019-03-01">2019-03-01</time></td>
+</tr>
+<tr>
+<td>18.0</td>
+<td>15.0.18075.0</td>
+<td>SQL Server Management Studio (SSMS) 18.0 (Preview 6)&nbsp; <span class="beta">Beta</span></td>
+<td><time title="December 18, 2018" datetime="2018-12-18">2018-12-18</time></td>
+</tr>
+<tr>
+<td>18.0</td>
+<td>15.0.18068.0</td>
+<td>SQL Server Management Studio (SSMS) 18.0 (Preview 5)&nbsp; <span class="beta">Beta</span></td>
+<td><time title="November 15, 2018" datetime="2018-11-15">2018-11-15</time></td>
+</tr>
+<tr>
+<td>18.0</td>
+<td>15.0.18040.0</td>
+<td>SQL Server Management Studio (SSMS) 18.0 (Preview 4)&nbsp; <span class="beta">Beta</span></td>
+<td><time title="September 24, 2018" datetime="2018-09-24">2018-09-24</time></td>
+</tr>
+<tr>
+<td>17.9.1</td>
+<td>14.0.17289.0</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms#1791" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 17.9.1</a></td>
+<td><time title="November 21, 2018" datetime="2018-11-21">2018-11-21</time></td>
+</tr>
+<tr>
+<td>17.9</td>
+<td>14.0.17285.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#ssms-179" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 17.9</a></td>
+<td><time title="September 4, 2018" datetime="2018-09-04">2018-09-04</time></td>
+</tr>
+<tr>
+<td>17.8.1</td>
+<td>14.0.17277.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#downloadssdtmediadownloadpng-ssms-1781httpsgomicrosoftcomfwlinklinkid875802" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 17.8.1</a></td>
+<td><time title="June 26, 2018" datetime="2018-06-26">2018-06-26</time></td>
+</tr>
+<tr>
+<td>17.8</td>
+<td>14.0.17276.0</td>
+<td>SQL Server Management Studio (SSMS) 17.8&nbsp; <span class="cve">Withdrawn</span></td>
+<td><time title="June 21, 2018" datetime="2018-06-21">2018-06-21</time></td>
+</tr>
+<tr>
+<td>17.7</td>
+<td>14.0.17254.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#downloadssdtmediadownloadpng-ssms-177httpsgomicrosoftcomfwlinklinkid873126" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 17.7</a></td>
+<td><time title="May 9, 2018" datetime="2018-05-09">2018-05-09</time></td>
+</tr>
+<tr>
+<td>17.6</td>
+<td>14.0.17230.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#downloadssdtmediadownloadpng-ssms-176httpsgomicrosoftcomfwlinklinkid870039" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 17.6</a></td>
+<td><time title="March 20, 2018" datetime="2018-03-20">2018-03-20</time></td>
+</tr>
+<tr>
+<td>17.5</td>
+<td>14.0.17224.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#downloadssdtmediadownloadpng-ssms-175httpsgomicrosoftcomfwlinklinkid867670" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 17.5</a></td>
+<td><time title="February 15, 2018" datetime="2018-02-15">2018-02-15</time></td>
+</tr>
+<tr>
+<td>17.4</td>
+<td>14.0.17213.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#downloadssdtmediadownloadpng-ssms-174httpsgomicrosoftcomfwlinklinkid864329" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 17.4</a></td>
+<td><time title="December 7, 2017" datetime="2017-12-07">2017-12-07</time></td>
+</tr>
+<tr>
+<td>17.3</td>
+<td>14.0.17199.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#downloadssdtmediadownloadpng-ssms-173httpsgomicrosoftcomfwlinklinkid858904" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 17.3</a></td>
+<td><time title="October 9, 2017" datetime="2017-10-09">2017-10-09</time></td>
+</tr>
+<tr>
+<td>17.2</td>
+<td>14.0.17177.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#downloadssdtmediadownloadpng-ssms-172httpsgomicrosoftcomfwlinklinkid854085" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 17.2</a></td>
+<td><time title="August 7, 2017" datetime="2017-08-07">2017-08-07</time></td>
+</tr>
+<tr>
+<td>17.1</td>
+<td>14.0.17119.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#downloadssdtmediadownloadpng-ssms-171httpsgomicrosoftcomfwlinklinkid849819" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 17.1</a></td>
+<td><time title="June 27, 2017" datetime="2017-06-27">2017-06-27</time></td>
+</tr>
+<tr>
+<td>17.0</td>
+<td>14.0.17099.0</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#downloadssdtmediadownloadpng-ssms-170httpgomicrosoftcomfwlinklinkid847722" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 17.0</a></td>
+<td><time title="April 25, 2017" datetime="2017-04-25">2017-04-25</time></td>
+</tr>
+<tr>
+<td>17.0</td>
+<td>14.0.16140.0</td>
+<td>SQL Server Management Studio (SSMS) 17.0 Release Candidate 3 (RC3)</td>
+<td><time title="March 9, 2017" datetime="2017-03-09">2017-03-09</time></td>
+</tr>
+<tr>
+<td>17.0</td>
+<td>14.0.16140.0</td>
+<td>SQL Server Management Studio (SSMS) 17.0 Release Candidate 2 (RC2)</td>
+<td><time title="January 30, 2017" datetime="2017-01-30">2017-01-30</time></td>
+</tr>
+<tr>
+<td>17.0</td>
+<td>14.0.16000.64</td>
+<td>SQL Server Management Studio (SSMS) 17.0 Release Candidate 1 (RC1)</td>
+<td><time title="November 16, 2016" datetime="2016-11-16">2016-11-16</time></td>
+</tr>
+<tr>
+<td>16.5.3</td>
+<td>13.0.16106.4</td>
+<td><a href="https://learn.microsoft.com/en-us/sql/ssms/release-notes-ssms#1653" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 16.5.3</a></td>
+<td><time title="January 30, 2017" datetime="2017-01-30">2017-01-30</time></td>
+</tr>
+<tr>
+<td>16.5.2</td>
+<td>13.0.16105.4</td>
+<td>SQL Server Management Studio (SSMS) 16.5.2&nbsp; <span class="cve">Withdrawn</span></td>
+<td><time title="January 18, 2017" datetime="2017-01-18">2017-01-18</time></td>
+</tr>
+<tr>
+<td>16.5.1</td>
+<td>13.0.16100.1</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#ssms-1651" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 16.5.1</a></td>
+<td><time title="December 5, 2016" datetime="2016-12-05">2016-12-05</time></td>
+</tr>
+<tr>
+<td>16.5</td>
+<td>13.0.16000.28</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#downloadssdtmediadownloadpng-ssms-165httpgomicrosoftcomfwlinklinkid832812" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 16.5</a></td>
+<td><time title="October 26, 2016" datetime="2016-10-26">2016-10-26</time></td>
+</tr>
+<tr>
+<td>16.4.1</td>
+<td>13.0.15900.1</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#downloadssdtmediadownloadpng-ssms-1641-september-2016httpgomicrosoftcomfwlinklinkid828615" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 16.4.1</a></td>
+<td><time title="September 23, 2016" datetime="2016-09-23">2016-09-23</time></td>
+</tr>
+<tr>
+<td>16.4</td>
+<td>13.0.15800.18</td>
+<td>SQL Server Management Studio (SSMS) 16.4&nbsp; <span class="cve">Withdrawn</span></td>
+<td><time title="September 20, 2016" datetime="2016-09-20">2016-09-20</time></td>
+</tr>
+<tr>
+<td>16.3</td>
+<td>13.0.15700.28</td>
+<td><a href="https://docs.microsoft.com/en-us/sql/ssms/sql-server-management-studio-changelog-ssms?view=sql-server-2017#downloadssdtmediadownloadpng-ssms-163-august-2016httpgomicrosoftcomfwlinklinkid824938" target="_blank" rel="nofollow noopener">SQL Server Management Studio (SSMS) 16.3</a></td>
+<td><time title="August 20, 2016" datetime="2016-08-20">2016-08-20</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.15600.2</td>
+<td>SQL Server Management Studio (SSMS) July 2016 Hotfix Update</td>
+<td><time title="July 13, 2016" datetime="2016-07-13">2016-07-13</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.15500.91</td>
+<td>SQL Server Management Studio (SSMS) July 2016&nbsp; <span class="cve">Withdrawn</span></td>
+<td><time title="July 1, 2016" datetime="2016-07-01">2016-07-01</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.15000.23</td>
+<td>SQL Server Management Studio (SSMS) June 2016</td>
+<td><time title="June 1, 2016" datetime="2016-06-01">2016-06-01</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.14000.36</td>
+<td>SQL Server Management Studio (SSMS) April 2016 Preview</td>
+<td><time title="April 15, 2016" datetime="2016-04-15">2016-04-15</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.13000.55</td>
+<td>SQL Server Management Studio (SSMS) March 2016 Preview Refresh</td>
+<td><time title="April 1, 2016" datetime="2016-04-01">2016-04-01</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.12500.29</td>
+<td>SQL Server Management Studio (SSMS) March 2016 Preview&nbsp; <span class="cve">Withdrawn</span></td>
+<td><time title="March 18, 2016" datetime="2016-03-18">2016-03-18</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.12000.65</td>
+<td>SQL Server Management Studio (SSMS) February 2016 Preview</td>
+<td><time title="March 7, 2016" datetime="2016-03-07">2016-03-07</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.11000.78</td>
+<td>SQL Server Management Studio (SSMS) January 2016 Preview</td>
+<td><time title="February 3, 2016" datetime="2016-02-03">2016-02-03</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.900.73</td>
+<td>SQL Server Management Studio (SSMS) December 2015 Preview</td>
+<td><time title="December 17, 2015" datetime="2015-12-17">2015-12-17</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.800.111</td>
+<td>SQL Server Management Studio (SSMS) November 2015 Preview</td>
+<td><time title="November 30, 2015" datetime="2015-11-30">2015-11-30</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.700.242</td>
+<td>SQL Server Management Studio (SSMS) October 2015 Preview</td>
+<td><time title="October 28, 2015" datetime="2015-10-28">2015-10-28</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.600.65</td>
+<td>SQL Server Management Studio (SSMS) September 2015 Preview</td>
+<td><time title="September 30, 2015" datetime="2015-09-30">2015-09-30</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.500.53</td>
+<td>SQL Server Management Studio (SSMS) August 2015 Preview</td>
+<td><time title="September 1, 2015" datetime="2015-09-01">2015-09-01</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.400.91</td>
+<td>SQL Server Management Studio (SSMS) July 2015 Preview</td>
+<td><time title="July 22, 2015" datetime="2015-07-22">2015-07-22</time></td>
+</tr>
+<tr>
+<td></td>
+<td>13.0.300.44</td>
+<td>SQL Server Management Studio (SSMS) June 2015 Preview</td>
+<td><time title="June 24, 2015" datetime="2015-06-24">2015-06-24</time></td>
+</tr>
+</tbody>
+</table>
+	</div><!-- .entry-content -->
+</article>
+<div class="social-buttons"><span class="social-button social-button--vkontakte " data-social="vkontakte"></span><span class="social-button social-button--telegram main" data-social="telegram"><span>&#1055;&#1086;&#1076;&#1077;&#1083;&#1080;&#1090;&#1100;&#1089;&#1103; &#1074; Telegram</span></span><span class="social-button social-button--whatsapp " data-social="whatsapp"></span></div>
+<meta itemprop="author" content="&#1058;. &#1052;&#1077;&#1093;&#1090;&#1080;&#1077;&#1074;&#1072;">
+<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://sql-tutorial.github.io/" content="SQL Server Management Studio (SSMS) Versions">
+<meta itemprop="dateModified" content="2025-04-15">
+<meta itemprop="datePublished" content="2025-04-14T12:17:05+03:00">
+<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization" style="display: none;"><meta itemprop="name" content="SQL"><meta itemprop="telephone" content="SQL"><meta itemprop="address" content="https://sql-tutorial.github.io/"></div>
+        </main><!-- #main -->
+    </div><!-- #primary -->
+    </div><!--.site-content-inner-->
+</div><!--.site-content-->
+<div class="site-footer-container">
+    <footer id="colophon" class="site-footer full" itemscope itemtype="http://schema.org/WPFooter">
+        <div class="site-footer-inner fixed">
+<div class="footer-bottom">
+    <div class="footer-info">
+        <div class="footer-copyright">&copy; 2025 &#1050;&#1086;&#1087;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; &#1074;&#1086;&#1079;&#1084;&#1086;&#1078;&#1085;&#1086; &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1087;&#1088;&#1080; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1085;&#1080;&#1080; &#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1081; &#1089;&#1089;&#1099;&#1083;&#1082;&#1080; &#1085;&#1072; &#1080;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;. <a href="https://sql-tutorial.github.io/contacts">&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1099;</a> | <a href="https://sql-tutorial.github.io/about">&#1054; &#1087;&#1088;&#1086;&#1077;&#1082;&#1090;&#1077;</a> | <a href="https://sql-tutorial.github.io/privacy">&#1055;&#1086;&#1083;&#1080;&#1090;&#1080;&#1082;&#1072; &#1082;&#1086;&#1085;&#1092;&#1080;&#1076;&#1077;&#1085;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1080;</a> | <a href="https://sql-tutorial.github.io/karta-sayta">&#1050;&#1072;&#1088;&#1090;&#1072; &#1089;&#1072;&#1081;&#1090;&#1072;</a>
+</div>
+        <div class="footer-under-copyright"></div>
+	        </div>
+    </div>
+        </div>
+    </footer><!--.site-footer-->
+</div>
+            <button type="button" class="scrolltop js-scrolltop" data-mob="on"></button>
+</div><!-- #page -->
+<script defer src="data:text/javascript;base64,dmFyIHBzZXVkb19saW5rcyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoIi5wc2V1ZG8tY2xlYXJmeS1saW5rIik7Zm9yICh2YXIgaT0wO2k8cHNldWRvX2xpbmtzLmxlbmd0aDtpKysgKSB7IHBzZXVkb19saW5rc1tpXS5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsIGZ1bmN0aW9uKGUpeyAgIHdpbmRvdy5vcGVuKCBlLnRhcmdldC5nZXRBdHRyaWJ1dGUoImRhdGEtdXJpIikgKTsgfSk7IH0="></script><noscript><style>.lazyload{display:none;}</style></noscript><script data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script><script defer data-noptimize="1" src="https://sql-tutorial.github.io/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js?ao_version=3.1.13"></script><script defer id="yelly-scripts-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgc2V0dGluZ3NfYXJyYXkgPSB7InJhdGluZ190ZXh0X2F2ZXJhZ2UiOiJcdTA0NDFcdTA0NDBcdTA0MzVcdTA0MzRcdTA0M2RcdTA0MzVcdTA0MzUiLCJyYXRpbmdfdGV4dF9mcm9tIjoiXHUwNDM4XHUwNDM3IiwibGlnaHRib3hfZGlzcGxheSI6IjEifTsKdmFyIHdwc19hamF4ID0geyJ1cmwiOiJodHRwczpcL1wvbXlwZXN0cmVqZWN0LnJ1XC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJub25jZSI6IjY0NjdjMTljMTEifTsKLyogXV0+ICovCg=="></script>
+<script defer type="text/javascript" src="https://sql-tutorial.github.io/wp-content/themes/yelly/assets/js/scripts.min.js" id="yelly-scripts-js"></script>
+<script defer type="text/javascript" src="https://sql-tutorial.github.io/wp-content/plugins/enlighter/cache/enlighterjs.min.js" id="enlighterjs-js"></script>
+<script defer id="enlighterjs-js-after" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwohZnVuY3Rpb24oZSxuKXtpZigidW5kZWZpbmVkIiE9dHlwZW9mIEVubGlnaHRlckpTKXt2YXIgbz17InNlbGVjdG9ycyI6eyJibG9jayI6InByZS5FbmxpZ2h0ZXJKU1JBVyIsImlubGluZSI6ImNvZGUuRW5saWdodGVySlNSQVcifSwib3B0aW9ucyI6eyJpbmRlbnQiOjQsImFtcGVyc2FuZENsZWFudXAiOnRydWUsImxpbmVob3ZlciI6dHJ1ZSwicmF3Y29kZURiY2xpY2siOmZhbHNlLCJ0ZXh0T3ZlcmZsb3ciOiJicmVhayIsImxpbmVudW1iZXJzIjp0cnVlLCJ0aGVtZSI6ImNsYXNzaWMiLCJsYW5ndWFnZSI6ImdlbmVyaWMiLCJyZXRhaW5Dc3NDbGFzc2VzIjpmYWxzZSwiY29sbGFwc2UiOmZhbHNlLCJ0b29sYmFyT3V0ZXIiOiIiLCJ0b29sYmFyVG9wIjoie0JUTl9SQVd9e0JUTl9DT1BZfXtCVE5fV0lORE9XfXtCVE5fV0VCU0lURX0iLCJ0b29sYmFyQm90dG9tIjoiIn19OyhlLkVubGlnaHRlckpTSU5JVD1mdW5jdGlvbigpe0VubGlnaHRlckpTLmluaXQoby5zZWxlY3RvcnMuYmxvY2ssby5zZWxlY3RvcnMuaW5saW5lLG8ub3B0aW9ucyl9KSgpfWVsc2V7KG4mJihuLmVycm9yfHxuLmxvZyl8fGZ1bmN0aW9uKCl7fSkoIkVycm9yOiBFbmxpZ2h0ZXJKUyByZXNvdXJjZXMgbm90IGxvYWRlZCB5ZXQhIil9fSh3aW5kb3csY29uc29sZSk7Ci8qIF1dPiAqLwo="></script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(91675099, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/91675099" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --></body>
+</html>

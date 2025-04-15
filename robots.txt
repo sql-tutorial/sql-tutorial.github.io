@@ -1,0 +1,15 @@
+User-agent: *
+
+Disallow: /wp-includes
+Disallow: /wp-content/plugins
+Disallow: /wp-content/cache
+Disallow: /wp-json/
+Disallow: /*?
+Disallow: /?s=
+Allow: /wp-includes/*.css
+Allow: /wp-includes/*.js
+Allow: /wp-content/plugins/*.css
+Allow: /wp-content/plugins/*.js
+Allow: /*.css
+Allow: /*.js
+Sitemap: https://sql-tutorial.github.io/sitemap_index.xml
