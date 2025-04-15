@@ -91,8 +91,8 @@ SELECT BookID, ABS(CHECKSUM(NEWID()) % 101) + 100
 FROM Books;
 -- Insert customers
 INSERT INTO [dbo].[Customers](FirstName, LastName, Email, PhoneNumber, Address) VALUES
-('John', 'Doe', ' <a href="https://sql-tutorial.github.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ef85808781c18b808aaf88828e8683c18c8082">[email&nbsp;protected]</a> ', '123-456-7890', '123 Elm Street, Springfield, IL 62701'),
-('Jane', 'Smith', ' <a href="https://sql-tutorial.github.io/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d0bab1beb5fea3bdb9a4b890a9b1b8bfbffeb3bfbd">[email&nbsp;protected]</a> ', '234-567-8901', '456 Oak Avenue, Metropolis, NY 10001');</pre>
+('John', 'Doe', ' <a href="https://sql-tutorial.github.io/cdn-cgi/" class="__cf_email__" data-cfemail="ef85808781c18b808aaf88828e8683c18c8082">[email&nbsp;protected]</a> ', '123-456-7890', '123 Elm Street, Springfield, IL 62701'),
+('Jane', 'Smith', ' <a href="https://sql-tutorial.github.io/cdn-cgi/" class="__cf_email__" data-cfemail="d0bab1beb5fea3bdb9a4b890a9b1b8bfbffeb3bfbd">[email&nbsp;protected]</a> ', '234-567-8901', '456 Oak Avenue, Metropolis, NY 10001');</pre>
 <h2 id="vypolnenie-tranzaktsii"> &#1042;&#1099;&#1087;&#1086;&#1083;&#1085;&#1077;&#1085;&#1080;&#1077; &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1080;</h2>
 <p> &#1057;&#1086;&#1079;&#1076;&#1072;&#1081;&#1090;&#1077; &#1085;&#1086;&#1074;&#1099;&#1081; &#1092;&#1072;&#1081;&#1083; orderdb.php &#1080; &#1086;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1080;&#1090;&#1077; &#1082;&#1083;&#1072;&#1089;&#1089; OrderDB, &#1082;&#1086;&#1090;&#1086;&#1088;&#1099;&#1081; &#1086;&#1073;&#1088;&#1072;&#1073;&#1072;&#1090;&#1099;&#1074;&#1072;&#1077;&#1090; &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1102;: </p>
 <pre class="EnlighterJSRAW" data-enlighter-language="sql">conn = $conn;

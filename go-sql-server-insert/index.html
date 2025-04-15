@@ -110,7 +110,7 @@ func InsertAuthor(db *sql.DB, author *Author)(int64, error) {
     LastName  string
     BirthDate time.Time
 }</pre>
-<p> &#1064;&#1072;&#1075; 3. &#1057;&#1086;&#1079;&#1076;&#1072;&#1081;&#1090;&#1077; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102; InsertAuthor, &#1082;&#1086;&#1090;&#1086;&#1088;&#1072;&#1103; <a href="https://sql-tutorial.github.io/sql-server-in/sert/">&#1074;&#1089;&#1090;&#1072;&#1074;&#1083;&#1103;&#1077;&#1090; &#1085;&#1086;&#1074;&#1091;&#1102; &#1089;&#1090;&#1088;&#1086;&#1082;&#1091;</a> &#1074; &#1090;&#1072;&#1073;&#1083;&#1080;&#1094;&#1091; Authors: </p>
+<p> &#1064;&#1072;&#1075; 3. &#1057;&#1086;&#1079;&#1076;&#1072;&#1081;&#1090;&#1077; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102; InsertAuthor, &#1082;&#1086;&#1090;&#1086;&#1088;&#1072;&#1103; <a href="https://sql-tutorial.github.io/sql-server-in/">&#1074;&#1089;&#1090;&#1072;&#1074;&#1083;&#1103;&#1077;&#1090; &#1085;&#1086;&#1074;&#1091;&#1102; &#1089;&#1090;&#1088;&#1086;&#1082;&#1091;</a> &#1074; &#1090;&#1072;&#1073;&#1083;&#1080;&#1094;&#1091; Authors: </p>
 <pre class="EnlighterJSRAW" data-enlighter-language="sql">func InsertAuthor(db *sql.DB, author *Author)(int64, error) {
     // Prepare the INSERT statement
     stmt, err := db.Prepare("INSERT INTO Authors(FirstName, LastName, BirthDate) VALUES(@FirstName, @LastName, @BirthDate);")
