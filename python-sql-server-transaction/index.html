@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<link media="all" href="https://sql-tutorial.github.io/wp-content/cache/autoptimize/css/autoptimize_671c89b062ef28d4fd802b778eb07d72.css" rel="stylesheet"><title>Python SQL Server: &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1103;</title>
+	<meta name="description" content="&#1050;&#1088;&#1072;&#1090;&#1082;&#1086;&#1077; &#1086;&#1087;&#1080;&#1089;&#1072;&#1085;&#1080;&#1077;: &#1074; &#1101;&#1090;&#1086;&#1084; &#1088;&#1091;&#1082;&#1086;&#1074;&#1086;&#1076;&#1089;&#1090;&#1074;&#1077; &#1074;&#1099; &#1091;&#1079;&#1085;&#1072;&#1077;&#1090;&#1077;, &#1082;&#1072;&#1082; &#1074;&#1099;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1100; &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1102; SQL Server &#1085;&#1072; Python. &#1069;&#1090;&#1086; &#1088;&#1091;&#1082;&#1086;&#1074;&#1086;&#1076;&#1089;&#1090;&#1074;&#1086; &#1085;&#1072;&#1095;&#1080;&#1085;&#1072;&#1077;&#1090;&#1089;&#1103; &#1090;&#1072;&#1084;, &#1075;&#1076;&#1077; &#1079;&#1072;&#1082;&#1086;&#1085;&#1095;&#1080;&#1083;&#1086;&#1089;&#1100;">
+	<link rel="canonical" href="https://sql-tutorial.github.io/python-sql-server-transaction">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Python SQL Server: &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1103;">
+	<meta property="og:description" content="&#1050;&#1088;&#1072;&#1090;&#1082;&#1086;&#1077; &#1086;&#1087;&#1080;&#1089;&#1072;&#1085;&#1080;&#1077;: &#1074; &#1101;&#1090;&#1086;&#1084; &#1088;&#1091;&#1082;&#1086;&#1074;&#1086;&#1076;&#1089;&#1090;&#1074;&#1077; &#1074;&#1099; &#1091;&#1079;&#1085;&#1072;&#1077;&#1090;&#1077;, &#1082;&#1072;&#1082; &#1074;&#1099;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1100; &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1102; SQL Server &#1085;&#1072; Python. &#1069;&#1090;&#1086; &#1088;&#1091;&#1082;&#1086;&#1074;&#1086;&#1076;&#1089;&#1090;&#1074;&#1086; &#1085;&#1072;&#1095;&#1080;&#1085;&#1072;&#1077;&#1090;&#1089;&#1103; &#1090;&#1072;&#1084;, &#1075;&#1076;&#1077; &#1079;&#1072;&#1082;&#1086;&#1085;&#1095;&#1080;&#1083;&#1086;&#1089;&#1100;">
+	<meta property="og:url" content="https://sql-tutorial.github.io/python-sql-server-transaction">
+	<meta property="og:site_name" content="SQL">
+	<meta property="article:published_time" content="2025-04-15T08:18:06+00:00">
+	<meta name="author" content="&#1052;&#1080;&#1088;&#1086;&#1089;&#1083;&#1072;&#1074; &#1057;.">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://sql-tutorial.github.io/python-sql-server-transaction#article","isPartOf":{"@id":"https://sql-tutorial.github.io/python-sql-server-transaction"},"author":{"name":"&#1052;&#1080;&#1088;&#1086;&#1089;&#1083;&#1072;&#1074; &#1057;.","@id":"https://sql-tutorial.github.io/#/schema/person/c9074ea806fc0b6754ce74150b063bf5"},"headline":"Python SQL Server: &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1103;","datePublished":"2025-04-15T08:18:06+00:00","mainEntityOfPage":{"@id":"https://sql-tutorial.github.io/python-sql-server-transaction"},"wordCount":234,"publisher":{"@id":"https://sql-tutorial.github.io/#/schema/person/c9074ea806fc0b6754ce74150b063bf5"},"articleSection":["API"],"inLanguage":"ru-RU"},{"@type":"WebPage","@id":"https://sql-tutorial.github.io/python-sql-server-transaction","url":"https://sql-tutorial.github.io/python-sql-server-transaction","name":"Python SQL Server: &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1103;","isPartOf":{"@id":"https://sql-tutorial.github.io/#website"},"datePublished":"2025-04-15T08:18:06+00:00","description":"&#1050;&#1088;&#1072;&#1090;&#1082;&#1086;&#1077; &#1086;&#1087;&#1080;&#1089;&#1072;&#1085;&#1080;&#1077;: &#1074; &#1101;&#1090;&#1086;&#1084; &#1088;&#1091;&#1082;&#1086;&#1074;&#1086;&#1076;&#1089;&#1090;&#1074;&#1077; &#1074;&#1099; &#1091;&#1079;&#1085;&#1072;&#1077;&#1090;&#1077;, &#1082;&#1072;&#1082; &#1074;&#1099;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1100; &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1102; SQL Server &#1085;&#1072; Python. &#1069;&#1090;&#1086; &#1088;&#1091;&#1082;&#1086;&#1074;&#1086;&#1076;&#1089;&#1090;&#1074;&#1086; &#1085;&#1072;&#1095;&#1080;&#1085;&#1072;&#1077;&#1090;&#1089;&#1103; &#1090;&#1072;&#1084;, &#1075;&#1076;&#1077; &#1079;&#1072;&#1082;&#1086;&#1085;&#1095;&#1080;&#1083;&#1086;&#1089;&#1100;","breadcrumb":{"@id":"https://sql-tutorial.github.io/python-sql-server-transaction#breadcrumb"},"inLanguage":"ru-RU","potentialAction":[{"@type":"ReadAction","target":["https://sql-tutorial.github.io/python-sql-server-transaction"]}]},{"@type":"BreadcrumbList","@id":"https://sql-tutorial.github.io/python-sql-server-transaction#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"&#1043;&#1083;&#1072;&#1074;&#1085;&#1072;&#1103; &#1089;&#1090;&#1088;&#1072;&#1085;&#1080;&#1094;&#1072;","item":"https://sql-tutorial.github.io/"},{"@type":"ListItem","position":2,"name":"Python SQL Server: &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1103;"}]},{"@type":"WebSite","@id":"https://sql-tutorial.github.io/#website","url":"https://sql-tutorial.github.io/","name":"SQL","description":"&#1048;&#1085;&#1089;&#1090;&#1088;&#1091;&#1082;&#1094;&#1080;&#1080; &#1087;&#1086; SQL","publisher":{"@id":"https://sql-tutorial.github.io/#/schema/person/c9074ea806fc0b6754ce74150b063bf5"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://sql-tutorial.github.io/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"ru-RU"},{"@type":["Person","Organization"],"@id":"https://sql-tutorial.github.io/#/schema/person/c9074ea806fc0b6754ce74150b063bf5","name":"&#1052;&#1080;&#1088;&#1086;&#1089;&#1083;&#1072;&#1074; &#1057;.","logo":{"@id":"https://sql-tutorial.github.io/#/schema/person/image/"},"description":"&#1040;&#1074;&#1090;&#1086;&#1088; &#1089;&#1090;&#1072;&#1090;&#1077;&#1081;, &#1048;&#1041;-&#1089;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1080;&#1089;&#1090;"}]}</script>
+<link rel="stylesheet" id="google-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto%3A400%2C400i%2C700&amp;subset=cyrillic&amp;display=swap" media="all">
+<script defer type="text/javascript" src="https://sql-tutorial.github.io/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<link rel="preload" href="https://sql-tutorial.github.io/wp-content/themes/yelly/assets/fonts/icomoon.ttf" as="font" crossorigin>
+<link rel="icon" href="https://sql-tutorial.github.io/wp-content/uploads/2023/12/cropped-favi-32x32.png" sizes="32x32">
+<link rel="icon" href="https://sql-tutorial.github.io/wp-content/uploads/2023/12/cropped-favi-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://sql-tutorial.github.io/wp-content/uploads/2023/12/cropped-favi-180x180.png">
+<meta name="msapplication-TileImage" content="https://sql-tutorial.github.io/wp-content/uploads/2023/12/cropped-favi-270x270.png">
+    	<meta name="yandex-verification" content="18eb552a97e0a9ac">
+</head>
+<body class="post-template-default single single-post postid-536 single-format-standard wp-embed-responsive sidebar-right">
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content">&#1055;&#1077;&#1088;&#1077;&#1081;&#1090;&#1080; &#1082; &#1082;&#1086;&#1085;&#1090;&#1077;&#1085;&#1090;&#1091;</a>
+    <div class="search-screen-overlay js-search-screen-overlay"></div>
+    <div class="search-screen js-search-screen">
+<form role="search" method="get" class="search-form" action="https://sql-tutorial.github.io/">
+    <label>
+        <span class="screen-reader-text">Search for:</span>
+        <input type="search" class="search-field" placeholder="&#1055;&#1086;&#1080;&#1089;&#1082;..." value="" name="s">
+    </label>
+    <button type="submit" class="search-submit"></button>
+</form>    </div>
+<header id="masthead" class="site-header full" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="site-header-inner fixed">
+        <div class="humburger js-humburger"><span></span><span></span><span></span></div>
+<div class="site-branding">
+    <div class="site-branding__body"><div class="site-title"><a href="https://sql-tutorial.github.io/">SQL</a></div></div></div><!-- .site-branding -->
+    <nav id="site-navigation" class="main-navigation full">
+        <div class="main-navigation-inner fixed">
+            <div class="menu-menyu-container"><ul id="header_menu" class="menu"><li id="menu-item-1416" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1416"><a href="https://sql-tutorial.github.io/category/nachalo">&#1053;&#1072;&#1095;&#1072;&#1083;&#1086;</a></li>
+<li id="menu-item-1413" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-1413"><a href="https://sql-tutorial.github.io/category/api">API</a></li>
+<li id="menu-item-1414" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1414"><a href="https://sql-tutorial.github.io/category/administrirovanie-sql-servera">&#1040;&#1076;&#1084;&#1080;&#1085;&#1080;&#1089;&#1090;&#1088;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;</a></li>
+<li id="menu-item-1417" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1417"><a href="https://sql-tutorial.github.io/category/osnovy-sql">&#1054;&#1089;&#1085;&#1086;&#1074;&#1099; SQL</a></li>
+<li id="menu-item-1418" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1418"><a href="https://sql-tutorial.github.io/category/funktsii">&#1060;&#1091;&#1085;&#1082;&#1094;&#1080;&#1080;</a></li>
+</ul></div>        </div>
+    </nav><!-- #site-navigation -->
+    </div>
+</header><!-- #masthead -->
+    <div id="content" class="site-content fixed">
+        <div class="site-content-inner">
+        <div id="primary" class="content-area" itemscope itemtype="http://schema.org/Article">
+            <main id="main" class="site-main">
+<article id="post-536" class="article-post post-536 post type-post status-publish format-standard  category-api">
+        <header class="entry-header"><h1 class="entry-title" itemprop="headline">Python SQL Server: &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1103;</h1></header>
+    <div class="entry-meta"><span class="entry-time"><span class="entry-label">&#1042;&#1088;&#1077;&#1084;&#1103; &#1095;&#1090;&#1077;&#1085;&#1080;&#1103;</span> 5 &#1084;&#1080;&#1085;.</span><span class="entry-date"><span class="entry-label">&#1054;&#1087;&#1091;&#1073;&#1083;&#1080;&#1082;&#1086;&#1074;&#1072;&#1085;&#1086;</span> <time itemprop="datePublished" datetime="2025-04-15">15.04.2025</time></span></div>
+	<div class="entry-content" itemprop="articleBody">
+		<p>&#1050;&#1088;&#1072;&#1090;&#1082;&#1086;&#1077; &#1086;&#1087;&#1080;&#1089;&#1072;&#1085;&#1080;&#1077;: &#1074; &#1101;&#1090;&#1086;&#1084; &#1088;&#1091;&#1082;&#1086;&#1074;&#1086;&#1076;&#1089;&#1090;&#1074;&#1077; &#1074;&#1099; &#1091;&#1079;&#1085;&#1072;&#1077;&#1090;&#1077;, &#1082;&#1072;&#1082; &#1074;&#1099;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1100; &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1102; SQL Server &#1085;&#1072; Python.</p>
+<p class="note"> &#1069;&#1090;&#1086; &#1088;&#1091;&#1082;&#1086;&#1074;&#1086;&#1076;&#1089;&#1090;&#1074;&#1086; &#1085;&#1072;&#1095;&#1080;&#1085;&#1072;&#1077;&#1090;&#1089;&#1103; &#1090;&#1072;&#1084;, &#1075;&#1076;&#1077; &#1079;&#1072;&#1082;&#1086;&#1085;&#1095;&#1080;&#1083;&#1086;&#1089;&#1100; <a href="https://sql-tutorial.github.io/python-sql-server-delete/">&#1088;&#1091;&#1082;&#1086;&#1074;&#1086;&#1076;&#1089;&#1090;&#1074;&#1086; &#1087;&#1086; &#1091;&#1076;&#1072;&#1083;&#1077;&#1085;&#1080;&#1102; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093; &#1080;&#1079; &#1090;&#1072;&#1073;&#1083;&#1080;&#1094;&#1099;</a>.</p>
+<div class="table-of-contents open"><div class="table-of-contents__header"><span class="table-of-contents__hide js-table-of-contents-hide">&#1057;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;</span></div><ol class="table-of-contents__list js-table-of-contents-list">
+<li class="level-1"><a href="#nastroyka-vyborochnyh-dannyh">&#1053;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1072; &#1074;&#1099;&#1073;&#1086;&#1088;&#1086;&#1095;&#1085;&#1099;&#1093; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;</a></li><li class="level-1"><a href="#vypolnenie-tranzaktsii">&#1042;&#1099;&#1087;&#1086;&#1083;&#1085;&#1077;&#1085;&#1080;&#1077; &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1080;</a></li><li class="level-1"><a href="#zagruzite-ishodnyy-kod-proekta">&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1080;&#1090;&#1077; &#1080;&#1089;&#1093;&#1086;&#1076;&#1085;&#1099;&#1081; &#1082;&#1086;&#1076; &#1087;&#1088;&#1086;&#1077;&#1082;&#1090;&#1072;</a></li><li class="level-1"><a href="#kratkoe-soderzhanie">&#1050;&#1088;&#1072;&#1090;&#1082;&#1086;&#1077; &#1089;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;</a></li></ol></div><h2 id="nastroyka-vyborochnyh-dannyh"> &#1053;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1072; &#1074;&#1099;&#1073;&#1086;&#1088;&#1086;&#1095;&#1085;&#1099;&#1093; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;</h2>
+<p> &#1064;&#1072;&#1075; 1. &#1047;&#1072;&#1087;&#1091;&#1089;&#1090;&#1080;&#1090;&#1077; SQL Server Management Studio(SSMS) &#1080; &#1087;&#1086;&#1076;&#1082;&#1083;&#1102;&#1095;&#1080;&#1090;&#1077;&#1089;&#1100; &#1082; SQL Server.</p>
+<p> &#1064;&#1072;&#1075; 2. &#1057;&#1086;&#1079;&#1076;&#1072;&#1081;&#1090;&#1077; &#1079;&#1072;&#1087;&#1088;&#1086;&#1089; &#1080; &#1074;&#1099;&#1087;&#1086;&#1083;&#1085;&#1080;&#1090;&#1077; &#1089;&#1083;&#1077;&#1076;&#1091;&#1102;&#1097;&#1080;&#1077; &#1086;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;&#1099; &#1076;&#1083;&#1103; &#1074;&#1089;&#1090;&#1072;&#1074;&#1082;&#1080; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093; &#1074; &#1090;&#1072;&#1073;&#1083;&#1080;&#1094;&#1099; Books, BookAuthors &#1080; Inventories: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">INSERT INTO Books(Title, Publisher, ISBN, PublishedDate) VALUES
+('Mastering SQL: A Comprehensive Guide', 'Tech Books Publishing', '978-1234567890', '2022-01-15'),
+('The Art of Database Design', 'Expert Press', '978-0987654321', '2021-06-10'),
+('SQL Queries for Mere Mortals', 'Practical SQL Publishing', '978-1122334455', '2023-03-21'),
+('Advanced SQL Programming Techniques', 'Pro Code Press', '978-6677889900', '2020-09-30'),
+('Database Systems: Theory and Practice', 'Academic Press', '978-5566778899', '2022-11-05');
+DECLARE @BookID1 INT, @BookID2 INT, @BookID3 INT, @BookID4 INT, @BookID5 INT;
+SELECT @BookID1 = BookID FROM Books WHERE ISBN = '978-1234567890';
+SELECT @BookID2 = BookID FROM Books WHERE ISBN = '978-0987654321';
+SELECT @BookID3 = BookID FROM Books WHERE ISBN = '978-1122334455';
+SELECT @BookID4 = BookID FROM Books WHERE ISBN = '978-6677889900';
+SELECT @BookID5 = BookID FROM Books WHERE ISBN = '978-5566778899';
+-- Insert records into the BookAuthors table
+INSERT INTO BookAuthors(BookID, AuthorID)
+VALUES(@BookID1, 1),
+      (@BookID2, 1),
+      (@BookID3, 1),
+      (@BookID4, 1),
+      (@BookID5, 1);
+INSERT INTO Inventories(BookID, Qty)
+SELECT BookID, ABS(CHECKSUM(NEWID()) % 101) + 100
+FROM Books;</pre>
+<h2 id="vypolnenie-tranzaktsii"> &#1042;&#1099;&#1087;&#1086;&#1083;&#1085;&#1077;&#1085;&#1080;&#1077; &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1080;</h2>
+<p> &#1064;&#1072;&#1075; 1. &#1057;&#1086;&#1079;&#1076;&#1072;&#1081;&#1090;&#1077; &#1085;&#1086;&#1074;&#1099;&#1081; &#1084;&#1086;&#1076;&#1091;&#1083;&#1100; transaction.py &#1074; &#1082;&#1072;&#1090;&#1072;&#1083;&#1086;&#1075;&#1077; &#1087;&#1088;&#1086;&#1077;&#1082;&#1090;&#1072; &#1089;&#1086; &#1089;&#1083;&#1077;&#1076;&#1091;&#1102;&#1097;&#1080;&#1084; &#1082;&#1086;&#1076;&#1086;&#1084;: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">import logging
+from connect import create_connection
+def create_order(customer_id:int , book_id:int, quantity:int, price:float, order_date:str) -&gt; bool:
+    # connect to the SQL Server
+    conn = create_connection()
+    if conn is None:
+        return False
+    with(conn, conn.cursor() as cursor):
+        try:
+            # check inventory
+            cursor.execute("SELECT Qty FROM Inventories WHERE BookId = %s",(book_id,))
+            row = cursor.fetchone()
+            if row is None or row[0] &lt; quantity:
+                raise Exception("Insufficient inventory")
+            # insert into orders
+            cursor.execute("INSERT INTO Orders(OrderDate, CustomerId, TotalAmount) VALUES(%s, %s, %s)",(order_date, customer_id, price*quantity))
+            order_id = cursor.lastrowid
+            # insert into orderDetails
+            cursor.execute("INSERT INTO OrderDetails(OrderId, BookId, Quantity, Price) VALUES(%s, %s, %s, %s)",(order_id, book_id, quantity, price))
+            # update inventories
+            cursor.execute("UPDATE Inventories SET Qty = Qty - %s WHERE BookId = %s",(quantity, book_id))
+            conn.commit()        
+            return True
+        except Exception as e:
+            logging.error(f"Error creating order: {e}")
+            conn.rollback()
+    return False </pre>
+<p>&#1050;&#1072;&#1082; &#1101;&#1090;&#1086; &#1088;&#1072;&#1073;&#1086;&#1090;&#1072;&#1077;&#1090;.</p>
+<p> &#1057;&#1085;&#1072;&#1095;&#1072;&#1083;&#1072; &#1080;&#1084;&#1087;&#1086;&#1088;&#1090;&#1080;&#1088;&#1091;&#1077;&#1084; &#1074;&#1089;&#1090;&#1088;&#1086;&#1077;&#1085;&#1085;&#1099;&#1081; &#1084;&#1086;&#1076;&#1091;&#1083;&#1100; &#1074;&#1077;&#1076;&#1077;&#1085;&#1080;&#1103; &#1078;&#1091;&#1088;&#1085;&#1072;&#1083;&#1072;: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">import logging</pre>
+<p> &#1042;&#1086;-&#1074;&#1090;&#1086;&#1088;&#1099;&#1093;, &#1080;&#1084;&#1087;&#1086;&#1088;&#1090;&#1080;&#1088;&#1091;&#1081;&#1090;&#1077; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102; create_connection &#1080;&#1079; &#1084;&#1086;&#1076;&#1091;&#1083;&#1103; <a href="https://sql-tutorial.github.io/python-connect-to-sql-server/">connect</a> : </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">from connect import create_connection</pre>
+<p> &#1042;-&#1090;&#1088;&#1077;&#1090;&#1100;&#1080;&#1093;, &#1086;&#1087;&#1088;&#1077;&#1076;&#1077;&#1083;&#1080;&#1090;&#1077; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102; create_order(), &#1082;&#1086;&#1090;&#1086;&#1088;&#1072;&#1103; &#1089;&#1086;&#1079;&#1076;&#1072;&#1077;&#1090; &#1085;&#1086;&#1074;&#1099;&#1081; &#1079;&#1072;&#1082;&#1072;&#1079;: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">def create_order(customer_id:int , book_id:int, quantity:int, price:float, order_date:str) -&gt; bool:</pre>
+<p> &#1042;-&#1095;&#1077;&#1090;&#1074;&#1077;&#1088;&#1090;&#1099;&#1093;, &#1087;&#1086;&#1076;&#1082;&#1083;&#1102;&#1095;&#1080;&#1090;&#1077;&#1089;&#1100; &#1082; SQL Server, &#1074;&#1099;&#1079;&#1074;&#1072;&#1074; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102; create_connection(), &#1080; &#1074;&#1077;&#1088;&#1085;&#1080;&#1090;&#1077; 0, &#1077;&#1089;&#1083;&#1080; &#1089;&#1086;&#1077;&#1076;&#1080;&#1085;&#1077;&#1085;&#1080;&#1077; &#1085;&#1077; &#1091;&#1076;&#1072;&#1083;&#1086;&#1089;&#1100;: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">conn = create_connection()
+if conn is None:
+    return 0</pre>
+<p> &#1042;-&#1087;&#1103;&#1090;&#1099;&#1093;, &#1091;&#1087;&#1088;&#1072;&#1074;&#1083;&#1103;&#1081;&#1090;&#1077; &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1072;&#1084;&#1080; Connection &#1080; Cursor &#1089; &#1087;&#1086;&#1084;&#1086;&#1097;&#1100;&#1102; &#1086;&#1087;&#1077;&#1088;&#1072;&#1090;&#1086;&#1088;&#1072; with: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">with(conn, conn.cursor() as cursor):</pre>
+<p> &#1042;-&#1096;&#1077;&#1089;&#1090;&#1099;&#1093;, &#1089;&#1074;&#1077;&#1088;&#1100;&#1090;&#1077; &#1079;&#1072;&#1082;&#1072;&#1079;&#1072;&#1085;&#1085;&#1086;&#1077; &#1082;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1090;&#1074;&#1086; &#1089; &#1080;&#1084;&#1077;&#1102;&#1097;&#1080;&#1084;&#1089;&#1103; &#1085;&#1072; &#1089;&#1082;&#1083;&#1072;&#1076;&#1077; &#1082;&#1086;&#1083;&#1080;&#1095;&#1077;&#1089;&#1090;&#1074;&#1086;&#1084; &#1082;&#1085;&#1080;&#1075;&#1080;: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">cursor.execute("SELECT Qty FROM Inventories WHERE BookId = %s",(book_id,))
+row = cursor.fetchone()
+if row is None or row[0] &lt; quantity:
+    raise Exception("Insufficient inventory")</pre>
+<p> &#1042;-&#1089;&#1077;&#1076;&#1100;&#1084;&#1099;&#1093;, &#1074;&#1089;&#1090;&#1072;&#1074;&#1100;&#1090;&#1077; &#1085;&#1086;&#1074;&#1091;&#1102; &#1089;&#1090;&#1088;&#1086;&#1082;&#1091; &#1074; &#1090;&#1072;&#1073;&#1083;&#1080;&#1094;&#1091; Orders, &#1087;&#1086;&#1083;&#1091;&#1095;&#1080;&#1090;&#1077; &#1080;&#1076;&#1077;&#1085;&#1090;&#1080;&#1092;&#1080;&#1082;&#1072;&#1090;&#1086;&#1088; &#1074;&#1089;&#1090;&#1072;&#1074;&#1083;&#1077;&#1085;&#1085;&#1086;&#1075;&#1086; &#1079;&#1072;&#1082;&#1072;&#1079;&#1072; &#1080; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1081;&#1090;&#1077; &#1077;&#1075;&#1086; &#1076;&#1083;&#1103; &#1074;&#1089;&#1090;&#1072;&#1074;&#1082;&#1080; &#1085;&#1086;&#1074;&#1086;&#1081; &#1089;&#1090;&#1088;&#1086;&#1082;&#1080; &#1074; &#1090;&#1072;&#1073;&#1083;&#1080;&#1094;&#1091; OrderDetails: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql"># insert into orders
+cursor.execute("INSERT INTO Orders(OrderDate, CustomerId, TotalAmount) VALUES(%s, %s, %s)",(order_date, customer_id, price*quantity))
+order_id = cursor.lastrowid
+# insert into orderDetails
+cursor.execute("INSERT INTO OrderDetails(OrderId, BookId, Quantity, Price) VALUES(%s, %s, %s, %s)",(order_id, book_id, quantity, price))</pre>
+<p> &#1042;-&#1074;&#1086;&#1089;&#1100;&#1084;&#1099;&#1093;, &#1086;&#1073;&#1085;&#1086;&#1074;&#1080;&#1090;&#1077; &#1079;&#1072;&#1087;&#1072;&#1089;&#1099;, &#1091;&#1084;&#1077;&#1085;&#1100;&#1096;&#1080;&#1074; &#1086;&#1073;&#1098;&#1077;&#1084; &#1079;&#1072;&#1087;&#1072;&#1089;&#1086;&#1074; &#1085;&#1072; &#1086;&#1073;&#1098;&#1077;&#1084; &#1079;&#1072;&#1082;&#1072;&#1079;&#1072;: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">cursor.execute("UPDATE Inventories SET Qty = Qty - %s WHERE BookId = %s",(quantity, book_id))</pre>
+<p> &#1044;&#1077;&#1074;&#1103;&#1090;&#1086;&#1077;, &#1079;&#1072;&#1092;&#1080;&#1082;&#1089;&#1080;&#1088;&#1091;&#1081;&#1090;&#1077; &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1102;: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">conn.commit()</pre>
+<p> &#1042;-&#1076;&#1077;&#1089;&#1103;&#1090;&#1099;&#1093;, &#1074;&#1086;&#1079;&#1074;&#1088;&#1072;&#1097;&#1072;&#1077;&#1084; True, &#1077;&#1089;&#1083;&#1080; &#1079;&#1072;&#1082;&#1072;&#1079; &#1073;&#1099;&#1083; &#1089;&#1086;&#1079;&#1076;&#1072;&#1085; &#1091;&#1089;&#1087;&#1077;&#1096;&#1085;&#1086;: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">return True</pre>
+<p> &#1054;&#1076;&#1080;&#1085;&#1085;&#1072;&#1076;&#1094;&#1072;&#1090;&#1086;&#1077;. &#1045;&#1089;&#1083;&#1080; &#1087;&#1088;&#1080; &#1089;&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1080; &#1079;&#1072;&#1082;&#1072;&#1079;&#1072; &#1087;&#1088;&#1086;&#1080;&#1079;&#1086;&#1096;&#1083;&#1072; &#1086;&#1096;&#1080;&#1073;&#1082;&#1072;, &#1079;&#1072;&#1087;&#1080;&#1096;&#1080;&#1090;&#1077; &#1089;&#1074;&#1077;&#1076;&#1077;&#1085;&#1080;&#1103; &#1086;&#1073; &#1086;&#1096;&#1080;&#1073;&#1082;&#1077; &#1080; &#1086;&#1090;&#1082;&#1072;&#1090;&#1080;&#1090;&#1077; &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1102;: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">logging.error(f"Error creating order: {e}")
+conn.rollback()</pre>
+<p> &#1064;&#1072;&#1075; 2. &#1048;&#1079;&#1084;&#1077;&#1085;&#1080;&#1090;&#1077; main.py, &#1095;&#1090;&#1086;&#1073;&#1099; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1090;&#1100; &#1092;&#1091;&#1085;&#1082;&#1094;&#1080;&#1102; create_order: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">import logging, sys
+from transaction import create_order
+# config logging to console
+logging.basicConfig(
+    stream=sys.stdout, 
+    encoding='utf-8', 
+    format='%(levelname)s:%(message)s',
+    level=logging.DEBUG
+)
+# create an order
+try:
+    create_order(
+        customer_id=10,
+        book_id=1,
+        quantity=15, 
+        price=15.99,
+        order_date='2024-07-24'
+    );
+except Exception as e:
+    logging.error(f"Error fetching customers: {e}")       </pre>
+<p>&#1064;&#1072;&#1075; 3. &#1054;&#1090;&#1082;&#1088;&#1086;&#1081;&#1090;&#1077; &#1090;&#1077;&#1088;&#1084;&#1080;&#1085;&#1072;&#1083; &#1080; &#1079;&#1072;&#1087;&#1091;&#1089;&#1090;&#1080;&#1090;&#1077; &#1092;&#1072;&#1081;&#1083; main.py: </p>
+<pre class="EnlighterJSRAW" data-enlighter-language="sql">python main.py</pre>
+<h2 id="zagruzite-ishodnyy-kod-proekta"> &#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1080;&#1090;&#1077; &#1080;&#1089;&#1093;&#1086;&#1076;&#1085;&#1099;&#1081; &#1082;&#1086;&#1076; &#1087;&#1088;&#1086;&#1077;&#1082;&#1090;&#1072;</h2>
+<p> <a href="https://www.sqlservertutorial.net/wp-content/uploads/Python-SQL-Server-Transaction.zip">&#1047;&#1072;&#1075;&#1088;&#1091;&#1079;&#1080;&#1090;&#1077; &#1080;&#1089;&#1093;&#1086;&#1076;&#1085;&#1099;&#1081; &#1082;&#1086;&#1076; &#1087;&#1088;&#1086;&#1077;&#1082;&#1090;&#1072;</a></p>
+<h2 id="kratkoe-soderzhanie"> &#1050;&#1088;&#1072;&#1090;&#1082;&#1086;&#1077; &#1089;&#1086;&#1076;&#1077;&#1088;&#1078;&#1072;&#1085;&#1080;&#1077;</h2>
+<ul>
+<li> &#1042;&#1099;&#1079;&#1086;&#1074;&#1080;&#1090;&#1077; &#1084;&#1077;&#1090;&#1086;&#1076; commit() &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1072; Connection &#1076;&#1083;&#1103; &#1092;&#1080;&#1082;&#1089;&#1072;&#1094;&#1080;&#1080; &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1080;.</li>
+<li> &#1044;&#1083;&#1103; &#1086;&#1090;&#1082;&#1072;&#1090;&#1072; &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1080; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1081;&#1090;&#1077; &#1084;&#1077;&#1090;&#1086;&#1076; rollback() &#1086;&#1073;&#1098;&#1077;&#1082;&#1090;&#1072; Connection.</li>
+</ul>	</div><!-- .entry-content -->
+</article>
+<div class="social-buttons"><span class="social-button social-button--vkontakte " data-social="vkontakte"></span><span class="social-button social-button--telegram main" data-social="telegram"><span>&#1055;&#1086;&#1076;&#1077;&#1083;&#1080;&#1090;&#1100;&#1089;&#1103; &#1074; Telegram</span></span><span class="social-button social-button--whatsapp " data-social="whatsapp"></span></div>
+
+<div class="author-box">
+    <div class="author-info">
+        <div class="author-box__ava">
+                    </div>
+        <div class="author-box__body">
+            <div class="author-box__author">
+                &#1052;&#1080;&#1088;&#1086;&#1089;&#1083;&#1072;&#1074; &#1057;.            </div>
+            <div class="author-box__description">
+                <p>&#1040;&#1074;&#1090;&#1086;&#1088; &#1089;&#1090;&#1072;&#1090;&#1077;&#1081;, &#1048;&#1041;-&#1089;&#1087;&#1077;&#1094;&#1080;&#1072;&#1083;&#1080;&#1089;&#1090;</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <meta itemprop="author" content="&#1052;&#1080;&#1088;&#1086;&#1089;&#1083;&#1072;&#1074; &#1057;.">
+<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://sql-tutorial.github.io/python-sql-server-transaction" content="Python SQL Server: &#1090;&#1088;&#1072;&#1085;&#1079;&#1072;&#1082;&#1094;&#1080;&#1103;">
+    <meta itemprop="dateModified" content="2025-04-15">
+<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization" style="display: none;"><meta itemprop="name" content="SQL"><meta itemprop="telephone" content="SQL"><meta itemprop="address" content="https://sql-tutorial.github.io/"></div><div class="related-posts"><div class="related-posts__header">&#1042;&#1072;&#1084; &#1090;&#1072;&#1082;&#1078;&#1077; &#1084;&#1086;&#1078;&#1077;&#1090; &#1087;&#1086;&#1085;&#1088;&#1072;&#1074;&#1080;&#1090;&#1100;&#1089;&#1103;</div><div class="post-cards post-cards--vertical">
+<div class="post-card post-card--vertical post-card--related">
+    <div class="post-card__thumbnail"><a href="https://sql-tutorial.github.io/nodejs-sql-server-import-csv"><img width="270" height="230" src="https://sql-tutorial.github.io/wp-content/uploads/image02/nodejs-sql-server-import-csv-785bf3d-270x230.png" class="attachment-yelly_small size-yelly_small wp-post-image" alt="" decoding="async" fetchpriority="high"></a></div><div class="post-card__title"><a href="https://sql-tutorial.github.io/nodejs-sql-server-import-csv">Node.js SQL Server: &#1080;&#1084;&#1087;&#1086;&#1088;&#1090; CSV</a></div>
+    </div>
+<div class="post-card post-card--vertical post-card--related">
+    <div class="post-card__thumbnail"><a href="https://sql-tutorial.github.io/nodejs-sql-server-bulk-insert"><noscript><img width="345" height="67" src="https://sql-tutorial.github.io/wp-content/uploads/image02/nodejs-sql-server-bulk-insert-4d6b588-345x67.png" class="attachment-yelly_small size-yelly_small wp-post-image" alt="" decoding="async"></noscript><img width="345" height="67" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20345%2067%22%3E%3C/svg%3E" data-src="https://sql-tutorial.github.io/wp-content/uploads/image02/nodejs-sql-server-bulk-insert-4d6b588-345x67.png" class="lazyload attachment-yelly_small size-yelly_small wp-post-image" alt="" decoding="async"></a></div><div class="post-card__title"><a href="https://sql-tutorial.github.io/nodejs-sql-server-bulk-insert">&#1052;&#1072;&#1089;&#1089;&#1086;&#1074;&#1072;&#1103; &#1074;&#1089;&#1090;&#1072;&#1074;&#1082;&#1072; Node.js SQL Server</a></div>
+    </div>
+<div class="post-card post-card--vertical post-card--related post-card--thumbnail-no">
+    <div class="post-card__title"><a href="https://sql-tutorial.github.io/go-connect-sql-server">&#1055;&#1086;&#1076;&#1082;&#1083;&#1102;&#1095;&#1077;&#1085;&#1080;&#1077; &#1082; SQL Server</a></div>
+    </div>
+<div class="post-card post-card--vertical post-card--related post-card--thumbnail-no">
+    <div class="post-card__title"><a href="https://sql-tutorial.github.io/nodejs-sql-server-update">Node.js SQL-&#1089;&#1077;&#1088;&#1074;&#1077;&#1088;: &#1086;&#1073;&#1085;&#1086;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077;</a></div>
+    </div>
+<div class="post-card post-card--vertical post-card--related">
+    <div class="post-card__thumbnail"><a href="https://sql-tutorial.github.io/go-sql-server-insert"><noscript><img width="254" height="39" src="https://sql-tutorial.github.io/wp-content/uploads/image01/go-sql-server-inserting-data-ce16060.png" class="attachment-yelly_small size-yelly_small wp-post-image" alt="" decoding="async"></noscript><img width="254" height="39" src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20254%2039%22%3E%3C/svg%3E" data-src="https://sql-tutorial.github.io/wp-content/uploads/image01/go-sql-server-inserting-data-ce16060.png" class="lazyload attachment-yelly_small size-yelly_small wp-post-image" alt="" decoding="async"></a></div><div class="post-card__title"><a href="https://sql-tutorial.github.io/go-sql-server-insert">Go SQL Server: &#1042;&#1089;&#1090;&#1072;&#1074;&#1082;&#1072; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;</a></div>
+    </div>
+<div class="post-card post-card--vertical post-card--related post-card--thumbnail-no">
+    <div class="post-card__title"><a href="https://sql-tutorial.github.io/nodejs-sql-server-select">Node.js SQL-&#1089;&#1077;&#1088;&#1074;&#1077;&#1088;: &#1074;&#1099;&#1073;&#1088;&#1072;&#1090;&#1100;</a></div>
+    </div>
+</div></div>
+            </main><!-- #main -->
+        </div><!-- #primary -->
+    </div><!--.site-content-inner-->
+</div><!--.site-content-->
+<div class="site-footer-container">
+    <footer id="colophon" class="site-footer full" itemscope itemtype="http://schema.org/WPFooter">
+        <div class="site-footer-inner fixed">
+<div class="footer-bottom">
+    <div class="footer-info">
+        <div class="footer-copyright">&copy; 2025 &#1050;&#1086;&#1087;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; &#1074;&#1086;&#1079;&#1084;&#1086;&#1078;&#1085;&#1086; &#1090;&#1086;&#1083;&#1100;&#1082;&#1086; &#1087;&#1088;&#1080; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1085;&#1080;&#1080; &#1072;&#1082;&#1090;&#1080;&#1074;&#1085;&#1086;&#1081; &#1089;&#1089;&#1099;&#1083;&#1082;&#1080; &#1085;&#1072; &#1080;&#1089;&#1090;&#1086;&#1095;&#1085;&#1080;&#1082;. <a href="https://sql-tutorial.github.io/contacts">&#1050;&#1086;&#1085;&#1090;&#1072;&#1082;&#1090;&#1099;</a> | <a href="https://sql-tutorial.github.io/about">&#1054; &#1087;&#1088;&#1086;&#1077;&#1082;&#1090;&#1077;</a> | <a href="https://sql-tutorial.github.io/privacy">&#1055;&#1086;&#1083;&#1080;&#1090;&#1080;&#1082;&#1072; &#1082;&#1086;&#1085;&#1092;&#1080;&#1076;&#1077;&#1085;&#1094;&#1080;&#1072;&#1083;&#1100;&#1085;&#1086;&#1089;&#1090;&#1080;</a> | <a href="https://sql-tutorial.github.io/karta-sayta">&#1050;&#1072;&#1088;&#1090;&#1072; &#1089;&#1072;&#1081;&#1090;&#1072;</a>
+</div>
+        <div class="footer-under-copyright"></div>
+	        </div>
+    </div>
+        </div>
+    </footer><!--.site-footer-->
+</div>
+            <button type="button" class="scrolltop js-scrolltop" data-mob="on"></button>
+</div><!-- #page -->
+<script defer src="data:text/javascript;base64,dmFyIHBzZXVkb19saW5rcyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoIi5wc2V1ZG8tY2xlYXJmeS1saW5rIik7Zm9yICh2YXIgaT0wO2k8cHNldWRvX2xpbmtzLmxlbmd0aDtpKysgKSB7IHBzZXVkb19saW5rc1tpXS5hZGRFdmVudExpc3RlbmVyKCJjbGljayIsIGZ1bmN0aW9uKGUpeyAgIHdpbmRvdy5vcGVuKCBlLnRhcmdldC5nZXRBdHRyaWJ1dGUoImRhdGEtdXJpIikgKTsgfSk7IH0="></script><noscript><style>.lazyload{display:none;}</style></noscript><script data-noptimize="1">window.lazySizesConfig=window.lazySizesConfig||{};window.lazySizesConfig.loadMode=1;</script><script defer data-noptimize="1" src="https://sql-tutorial.github.io/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js?ao_version=3.1.13"></script><script defer id="yelly-scripts-js-extra" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwp2YXIgc2V0dGluZ3NfYXJyYXkgPSB7InJhdGluZ190ZXh0X2F2ZXJhZ2UiOiJcdTA0NDFcdTA0NDBcdTA0MzVcdTA0MzRcdTA0M2RcdTA0MzVcdTA0MzUiLCJyYXRpbmdfdGV4dF9mcm9tIjoiXHUwNDM4XHUwNDM3IiwibGlnaHRib3hfZGlzcGxheSI6IjEifTsKdmFyIHdwc19hamF4ID0geyJ1cmwiOiJodHRwczpcL1wvbXlwZXN0cmVqZWN0LnJ1XC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJub25jZSI6IjY0NjdjMTljMTEifTsKLyogXV0+ICovCg=="></script>
+<script defer type="text/javascript" src="https://sql-tutorial.github.io/wp-content/themes/yelly/assets/js/scripts.min.js" id="yelly-scripts-js"></script>
+<script defer type="text/javascript" src="https://sql-tutorial.github.io/wp-content/plugins/enlighter/cache/enlighterjs.min.js" id="enlighterjs-js"></script>
+<script defer id="enlighterjs-js-after" src="data:text/javascript;base64,Ci8qIDwhW0NEQVRBWyAqLwohZnVuY3Rpb24oZSxuKXtpZigidW5kZWZpbmVkIiE9dHlwZW9mIEVubGlnaHRlckpTKXt2YXIgbz17InNlbGVjdG9ycyI6eyJibG9jayI6InByZS5FbmxpZ2h0ZXJKU1JBVyIsImlubGluZSI6ImNvZGUuRW5saWdodGVySlNSQVcifSwib3B0aW9ucyI6eyJpbmRlbnQiOjQsImFtcGVyc2FuZENsZWFudXAiOnRydWUsImxpbmVob3ZlciI6dHJ1ZSwicmF3Y29kZURiY2xpY2siOmZhbHNlLCJ0ZXh0T3ZlcmZsb3ciOiJicmVhayIsImxpbmVudW1iZXJzIjp0cnVlLCJ0aGVtZSI6ImNsYXNzaWMiLCJsYW5ndWFnZSI6ImdlbmVyaWMiLCJyZXRhaW5Dc3NDbGFzc2VzIjpmYWxzZSwiY29sbGFwc2UiOmZhbHNlLCJ0b29sYmFyT3V0ZXIiOiIiLCJ0b29sYmFyVG9wIjoie0JUTl9SQVd9e0JUTl9DT1BZfXtCVE5fV0lORE9XfXtCVE5fV0VCU0lURX0iLCJ0b29sYmFyQm90dG9tIjoiIn19OyhlLkVubGlnaHRlckpTSU5JVD1mdW5jdGlvbigpe0VubGlnaHRlckpTLmluaXQoby5zZWxlY3RvcnMuYmxvY2ssby5zZWxlY3RvcnMuaW5saW5lLG8ub3B0aW9ucyl9KSgpfWVsc2V7KG4mJihuLmVycm9yfHxuLmxvZyl8fGZ1bmN0aW9uKCl7fSkoIkVycm9yOiBFbmxpZ2h0ZXJKUyByZXNvdXJjZXMgbm90IGxvYWRlZCB5ZXQhIil9fSh3aW5kb3csY29uc29sZSk7Ci8qIF1dPiAqLwo="></script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(91675099, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/91675099" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter --></body>
+</html>
