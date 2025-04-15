@@ -12,4 +12,8 @@ Allow: /wp-content/plugins/*.css
 Allow: /wp-content/plugins/*.js
 Allow: /*.css
 Allow: /*.js
+User-agent: Googlebot-Image
+Disallow: /*.jpg
+Disallow: /*.png
+
 Sitemap: https://sql-tutorial.github.io/sitemap_index.xml
